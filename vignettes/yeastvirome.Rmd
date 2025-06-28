@@ -1,0 +1,23 @@
+---
+title: "Exploring the 1,011-strain Yeast RNA Virome"
+author: "FIRSTNAME LASTNAME"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring the Yeast RNA Virome}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(yeastvirome)
+```
+
+```{r load}
+virome <- load_yeast_virome()
+str(virome, max.level = 1)
+```
+
+Add your exploratory narrative here…
