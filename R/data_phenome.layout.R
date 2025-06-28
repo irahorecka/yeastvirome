@@ -1,4 +1,4 @@
-# File: R/data_phenome.experiment.layout.R
+# File: R/data_phenome.layout.R
 # ------------------------------------------------------------
 #  Helpers & data for the phenome-experiment layout table
 # ------------------------------------------------------------
@@ -71,18 +71,3 @@ read_phenome_experiment_layout <- function(
 #' @seealso \code{\link{read_phenome_experiment_layout}}
 #' @export
 phenome.layout <- NULL      # will be populated in .onLoad()
-
-# Populate `phenome.layout` when the package namespace is loaded
-.onLoad <- function(libname, pkgname) {
-  try({
-    layout_tbl <- read_phenome_experiment_layout()
-    assign("phenome.layout",
-           layout_tbl,
-           envir = asNamespace(pkgname))
-    # make it available to the user when library(yeastvirome) is called
-    assign("phenome.layout",
-           layout_tbl,
-           envir = parent.env(environment()))
-  }, silent = TRUE)
-  invisible()
-}

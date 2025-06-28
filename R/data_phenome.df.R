@@ -1,12 +1,14 @@
-# File: R/data_Finalset_223phenotypes_1011.R
+# File: R/data_phenome.df.R
 # ------------------------------------------------------------
 #  Loads the full phenotype matrix for 1,011 yeast strains.
 #  From: https://github.com/SakshiKhaiwal/Genotype-to-phenotype-mapping-in-yeast/tree/main/data
+#  "Finalset_223phenotypes_1011.csv" renamed to phenome223_1011.csv"
+#  Accessed June 2025
 # ------------------------------------------------------------
 
 #' Read the wide 1,011-strain phenotype matrix
 #'
-#' Loads **inst/extdata/Finalset_223phenotypes_1011.csv**, returning a
+#' Loads **inst/extdata/phenome223_1011.csv**, returning a
 #' wide-format tibble with one row per yeast strain and ~223 phenotype
 #' columns.
 #'
@@ -26,11 +28,11 @@
 #' @export
 read_phenotype_matrix <- function(
     path = system.file("extdata",
-                       "Finalset_223phenotypes_1011.csv",
+                       "phenome223_1011.csv",
                        package = "yeastvirome")
 ) {
   if (!file.exists(path) || path == "") {
-    stop("Missing file: Finalset_223phenotypes_1011.csv")
+    stop("Missing file: phenome223_1011.csv")
   }
 
   # Use readr to auto-detect everything except std_name
@@ -61,12 +63,3 @@ read_phenotype_matrix <- function(
 #' @seealso \code{\link{read_phenotype_matrix}}
 #' @export
 phenome.df <- NULL
-
-.onLoad <- function(libname, pkgname) {
-  try({
-    pheno_tbl <- read_phenotype_matrix()
-    assign("phenome.df", pheno_tbl, envir = asNamespace(pkgname))
-    assign("phenome.df", pheno_tbl, envir = parent.env(environment()))
-  }, silent = TRUE)
-  invisible()
-}
