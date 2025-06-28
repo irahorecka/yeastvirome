@@ -2,7 +2,9 @@
 
 export(compute_phenome_statistics)
 export(load_yeast_virome)
+export(phenome.layout)
 export(prepare_phenome_plot_df)
+export(read_phenome_experiment_layout)
 export(summarise_virome_family)
 export(summarise_virome_species)
 export(summarise_virome_total)
