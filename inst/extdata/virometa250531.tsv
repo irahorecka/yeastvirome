@@ -1,0 +1,40 @@
+rvlabel	accession	species	family
+L-A-1_NC_003745.1	NC_003745.1	L_A	Totiviridae
+L-A-2 8F-13_KC677754.1	KC677754.1	L_A2	Totiviridae
+L-A-2_lus-like_MW174759.1	MW174759.1	L_Alus	Totiviridae
+L-A-28_KU845301.2 	KU845301.2 	L_A28	Totiviridae
+L-A-lusA_MW174762.1	MW174762.1	L_Alus	Totiviridae
+L-BC_NC_001641.1	NC_001641.1	L_BC	Totiviridae
+L-BC-lus_KT784813.1	KT784813.1	L_Bclus	Totiviridae
+L-BC-2_KX906605.1	KX906605.1	L_BC	Totiviridae
+Novel Toti GagFragment	NA	TotiX	Totiviridae
+Novel Toti Gag_consensus	NA	TotiX	Totiviridae
+Novel Toti Pol1	NA	TotiX	Totiviridae
+Novel Toti Pol2	NA	TotiX	Totiviridae
+Novel Toti Pol3	NA	TotiX	Totiviridae
+Novel Toti Pol4	NA	TotiX	Totiviridae
+Novel Toti Pol5	NA	TotiX	Totiviridae
+M1 NoPolyA_NC_001782	NC_001782	M1	Satellite
+M2 NoPolyA_X54154	X54154	M2	Satellite
+M2,  OK412903.1 	OK412903.1 	M2	Satellite
+M28 NoPolyA_Schmitt_Tipper	NA	M28	Satellite
+Mlus NoPolyA_GU723494	GU723494	Mlus	Satellite
+ScPV1 RdRp	NA	ScPV1	Partitiviridae
+ScPV1 Coat	NA	ScPV1	Partitiviridae
+ScPV2 RdRp	NA	ScPV2	Partitiviridae
+ScPV2 Coat	NA	ScPV2	Partitiviridae
+ScPV3 RdRp	NA	ScPV3	Partitiviridae
+ScPV3 Coat	NA	ScPV3	Partitiviridae
+ScCV1 Coat	NA	ScCV1	Partitiviridae
+ScCV1 RdRp	NA	ScCV1	Partitiviridae
+Novel Partiti RdRp	NA	ScPV1	Partitiviridae
+Novel Partiti Coat	NA	ScPV1	Partitiviridae
+20S	NA	n20S	Narnaviridae
+23S	NA	n23S	Narnaviridae
+N1199	NA	N1199	Narnaviridae
+I-329	NA	I_329	Narnaviridae
+Osiris Segment1	NA	Osiris	Narnaviridae
+Osiris Segment2	NA	Osiris	Narnaviridae
+Novel Narna1	NA	n23S	Narnaviridae
+Novel Narna2	NA	n23S	Narnaviridae
+ScMV1	NA	ScMV1	Mitoviridae
