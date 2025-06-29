@@ -2,30 +2,20 @@
 % Please edit documentation in R/data_phenome.df.R
 \name{read_phenotype_matrix}
 \alias{read_phenotype_matrix}
-\title{Read the wide 1,011-strain phenotype matrix}
+\title{Read the wide 1,011‑strain phenotype matrix}
 \usage{
 read_phenotype_matrix(
   path = system.file("extdata", "phenome223_1011.csv", package = "yeastvirome")
 )
 }
 \arguments{
-\item{path}{Optional override path. Defaults to internal file.}
+\item{path}{CSV path (defaults to internal copy).}
 }
 \value{
-A tibble with:
-\describe{
-\item{std_name}{Strain identifier (character)}
-\item{\if{html}{\out{<phenotype columns>}}}{Numeric values or NA}
-}
+A tibble with typed columns and rows ordered by \code{Tree_order}.
 }
 \description{
-Loads \strong{inst/extdata/phenome223_1011.csv}, returning a
-wide-format tibble with one row per yeast strain and ~223 phenotype
-columns.
-}
-\examples{
-\dontrun{
-pheno_tbl <- read_phenotype_matrix()
-dim(pheno_tbl)
-}
+Uses \code{phenome.layout} to coerce each column to its declared type.
+Any extra columns are kept as character; any missing columns trigger an
+informative error.
 }

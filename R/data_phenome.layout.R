@@ -49,7 +49,7 @@ read_phenome_experiment_layout <- function(
     )
   )
 
-  dplyr::relocate(df, dplyr::all_of(expected))
+  return( dplyr::relocate(df, dplyr::all_of(expected)) )
 }
 
 #' Phenome-experiment layout (pre-loaded)
