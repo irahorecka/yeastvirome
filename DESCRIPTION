@@ -1,6 +1,6 @@
 Package: yeastvirome
 Type: Package
-Title: Explore the 1011 Yeast RNA Virome
+Title: The RNA Virome of Yeast
 Version: 0.0.0.9000
 Authors@R:
     person(given = "Artem", family = "Babaian",
