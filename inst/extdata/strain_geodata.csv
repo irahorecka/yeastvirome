@@ -1,4 +1,4 @@
-StandardizedName,StrainName,Reference,SRA,Clade,geographic_value,city_region_value,province_state_value,country_value,geo_cc,geo_country,geo_region,geo_lat,geo_lon,geo_label
+std_name,StrainName,Reference,SRA,Clade,geographic_value,city_region_value,province_state_value,country_value,geo_cc,geo_country,geo_region,geo_lat,geo_lon,geo_label
 BSR,L-958,Peter et al. 2018,ERR1308588,4. Commercial Wine,Mendoza area_Argentina,NA,Mendoza area,Argentina,ARG,Argentina,Latin America and the Caribbean,-35.48521,-62.9807,"Mendoza area, Argentina, South America"
 BSS,L-960,Peter et al. 2018,ERR1308818,4. Commercial Wine,Mendoza area_Argentina,NA,Mendoza area,Argentina,ARG,Argentina,Latin America and the Caribbean,-35.48521,-62.9807,"Mendoza area, Argentina, South America"
 BST,L-962,Peter et al. 2018,ERR1308635,8. AU Wine 4,Mendoza area_Argentina,NA,Mendoza area,Argentina,ARG,Argentina,Latin America and the Caribbean,-35.48521,-62.9807,"Mendoza area, Argentina, South America"

@@ -1,4 +1,4 @@
-StandardizedName,StrainName,Reference,SRA,Clade,ecological_value,eco_cat1,eco_cat2,eco_cat3
+std_name,StrainName,Reference,SRA,Clade,ecological_value,eco_cat1,eco_cat2,eco_cat3
 AAA,RM11-1a,Peter et al. 2018,ERR1309487,6. West Europe Wine,Wine,Wine,Brewery,Food
 AAB,CBS422a,Peter et al. 2018,ERR1308784,12. Belgium Beer 1,Beer,Beer,Brewery,Food
 AAC,CBS2165a,Peter et al. 2018,ERR1309038,19. UK Beer,Beer,Beer,Brewery,Food
