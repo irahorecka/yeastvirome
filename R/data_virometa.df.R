@@ -41,6 +41,8 @@ read_virometa.df <- function(
     stop("Missing required columns: ", paste(missing_cols, collapse = ", "))
   }
 
+  df$import_label <- colnames(virome.df)[-(1:4)]
+
   return(df)
 }
 

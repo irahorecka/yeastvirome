@@ -4,12 +4,12 @@
 \alias{summarize_virome_family}
 \title{Summarize Virome Data by Family}
 \usage{
-summarize_virome_family(virome.df, vmeta.df)
+summarize_virome_family(virome.df, virometa.df)
 }
 \arguments{
 \item{virome.df}{The original wide data.frame (samples x viruses)}
 
-\item{vmeta.df}{The metadata data.frame mapping viruses to species and family}
+\item{virometa.df}{The metadata data.frame mapping viruses to species and family}
 }
 \value{
 Family-level summary data.frame

@@ -4,13 +4,9 @@
 \alias{long_phenome}
 \title{Prepare Phenotype × Family Data for Visualization}
 \usage{
-long_phenome(phenome.df, virome_family_df, threshold = 5)
+long_phenome(threshold = 5)
 }
 \arguments{
-\item{phenome.df}{Wide-format phenotype numeric matrix; first column is \code{std_name}.}
-
-\item{virome_family_df}{Wide-format family-level abundance matrix; first column is \code{std_name}.}
-
 \item{threshold}{Numeric threshold for minimum family abundance to consider as present.}
 }
 \value{

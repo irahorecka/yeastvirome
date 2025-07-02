@@ -30,6 +30,10 @@ read_virome.df <- function(
     progress       = FALSE
   )
 
+
+  df <- rnaseq.accessions %>%
+    dplyr::left_join(df, by = 'accession')
+
   return(tibble::as_tibble(df))
 }
 

@@ -3,21 +3,26 @@
 #' Converts wide-format phenotype and virome family abundance data into a tidy
 #' long-format suitable for ggplot visualizations such as boxplots or violin plots.
 #'
-#' @param phenome.df Wide-format phenotype numeric matrix; first column is `std_name`.
-#' @param virome_family_df Wide-format family-level abundance matrix; first column is `std_name`.
 #' @param threshold Numeric threshold for minimum family abundance to consider as present.
 #'
 #' @return A tidy tibble with columns: `std_name`, `phenotype`, `value`, and `family`.
 #' @import dplyr
 #' @import tidyr
 #' @export
-long_phenome <- function(phenome.df, virome_family_df, threshold = 5) {
+long_phenome <- function(threshold = 5) {
+  # Exclude non-numeric columns explicitly
+  numeric_cols <- phenome.df %>%
+    dplyr::select(where(is.numeric), -std_name) %>%
+    colnames()
+
   phenotype_long <- phenome.df %>%
     tidyr::pivot_longer(
-      cols = -std_name,
+      cols = dplyr::all_of(numeric_cols),
       names_to = "phenotype",
       values_to = "value"
     )
+
+  virome_family_df <- summarize_virome_family(virome.df, virometa.df)
 
   family_long <- virome_family_df %>%
     tidyr::pivot_longer(
