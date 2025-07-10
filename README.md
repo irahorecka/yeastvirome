@@ -9,7 +9,7 @@ Explore the RNA virome of the 1,011-strain *Saccharomyces cerevisiae* collection
 - Structured virome data for the 1000 yeast strains
 - Access to phenotype, virome, ecological, and geographic metadata
 - Preloaded tibbles and helper functions to simplify exploration
-- Utilities for virome summarization, visualization, and statistics
+- Utilities for virome summarization, visualizationM, and statistics
 
 ---
 
