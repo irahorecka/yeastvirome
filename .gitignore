@@ -8,3 +8,4 @@ LOCAL_*
 TMP_*
 .DS_Store
 .ipynb_checkpoints/
+data/
